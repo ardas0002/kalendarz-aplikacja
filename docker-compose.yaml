@@ -1,0 +1,24 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./front/Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - my-network
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: .
+      dockerfile: ./python/Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

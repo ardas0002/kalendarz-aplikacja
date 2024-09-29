@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendarz Wydarzeń</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Kalendarz Wydarzeń</h1>
+
+        <div class="calendar-navigation mb-4">
+            <button id="prev-month" class="btn btn-primary">Poprzedni miesiąc</button>
+            <span id="current-month-year" class="align-self-center mx-2"></span>
+            <button id="next-month" class="btn btn-primary">Następny miesiąc</button>
+        </div>
+
+        <div id="calendar" class="calendar"></div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
