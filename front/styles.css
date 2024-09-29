@@ -1,10 +1,32 @@
 body {
     padding: 20px;
     background-color: #f8f9fa; 
+    font-size: 16px; /* Set a base font size */
 }
 
+/* Add responsive styles for the title */
 h1 {
     color: #343a40; 
+    font-size: 2.5em; /* Adjust font size for larger screens */
+}
+
+/* Media query for scaling title and buttons */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for medium screens */
+    }
+    .btn {
+        font-size: 0.9em; /* Smaller button text */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Even smaller font size for small screens */
+    }
+    .btn {
+        font-size: 0.8em; /* Further reduce button text */
+    }
 }
 
 .calendar-navigation {
